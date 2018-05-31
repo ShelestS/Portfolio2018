@@ -1,0 +1,100 @@
+.aga{
+    background:orange;
+    height:300px;
+    width:300px;
+}
+.lol{
+height:500px;  
+}
+.height{
+    height:100px
+}
+.myimg:hover{
+    opacity: 0.95;
+}
+.kgb{
+    z-index:-1;
+    width:100%;
+}
+.namana{
+    z-index:5;
+}
+.gitLinkU{
+    right:0;
+    left:60% !important;
+}
+.normalimg{
+    background-size:70%
+}
+.main{
+    height:500px;
+    background-color:#175e3f;
+    background-size:cover;
+    color:#1c8758;
+}
+.main h4{
+    font-size:200%;
+    font-family:Roboto;
+    margin-top:23%;
+}
+.main1{
+   
+    background-color:#1c8758;
+    background-size:cover;
+    color:#175e3f;
+}
+.pe{
+    transition:1s;
+}
+.p0rt{
+    font-size:1000%;
+    font-family:Roboto;
+}
+.shell{
+    margin-top:10%;
+}
+.roww{
+    margin-bottom:0;
+}
+.my{
+    margin:0;
+}
+.video{
+    display:none;
+    width:100%;
+}
+.newimg{
+    display:none;
+    width:100%;
+}
+.pages{
+    display:none;
+}
+@media screen and (max-width: 600px) {
+  .p0rt {
+    font-size:450%;
+  }
+    .cardd{
+    width:200px;
+    }
+    .shell{
+        margin-top:30%;
+    }
+    .my{
+        font-size:250%;
+    }
+}
+.parallax-container {
+      height: 300px;
+    }
+.imgg{
+    height:250px;
+    width:50px
+}
+.card{
+    color:green
+}
+.introtext{
+    color:#affc88 !important;
+    font-size:120%
+}
