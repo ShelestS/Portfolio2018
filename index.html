@@ -48,17 +48,17 @@
                 <div class=" center col s12 m6">
                     <div class="card center">
                         <div class="card-image">
-                            
+
                             <img src="img/code2.png" class="responsive-img">
                             <span class="blue center card-title">Unity</span>
                             <span class="gitLinkU blue card-title"><a target="_blank" class="white-text" href="https://github.com/ShelestS/Unity">GitHub link</a></span>
                         </div>
                         <div class="cardcontent card-content">
-                            <p class="pe">Unity Project</p>
+                            <p class="pe black-text">Unity Project</p>
                         </div>
                         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/p4CzxuedGWE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <div class="card-action green">
-                            <a class="tryme">Click</a>
+                        <div class="card-action blue">
+                            <a class="tryme white-text">Click</a>
                         </div>
                     </div>
                 </div>
@@ -73,22 +73,41 @@
                             <span class="gitLinkU purple card-title"><a target="_blank" class="white-text" href="https://github.com/ShelestS/LaravelPHP">GitHub link</a></span>
                         </div>
                         <div class="card-content">
-                            <p class="pe1">PHP Laravel Project</p>
+                            <p class="pe1 orange-text">PHP Laravel Project</p>
                         </div>
                         <ul class="pages pagination">
-                            <li class="page green waves-effect"><a href="#!">1</a></li>
-                            <li class="page green waves-effect"><a href="#!">2</a></li>
-                            <li class="page green waves-effect"><a href="#!">3</a></li>
-                            <li class="page green waves-effect"><a href="#!">4</a></li>
-                            <li class="page green waves-effect"><a href="#!">5</a></li>
+                            <li class="page orange waves-effect"><a href="#!">1</a></li>
+                            <li class="page orange waves-effect"><a href="#!">2</a></li>
+                            <li class="page orange waves-effect"><a href="#!">3</a></li>
+                            <li class="page orange waves-effect"><a href="#!">4</a></li>
+                            <li class="page orange waves-effect"><a href="#!">5</a></li>
                         </ul>
                         <img src="img/1app.png" class="newimg responsive-img" id="0">
                         <img src="img/2app.png" class="newimg responsive-img" id="1">
                         <img src="img/3app.png" class="newimg responsive-img" id="2">
                         <img src="img/4app.png" class="newimg responsive-img" id="3">
                         <img src="img/5app.png" class="newimg responsive-img" id="4">
-                        <div class="card-action green">
-                            <a class="tryme1">Click</a>
+                        <div class="card-action purple">
+                            <a class="tryme1 white-text">Click</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-m2 col s12 m8">
+                            <div class="card center">
+                                <div class="card-image">
+                                    <img src="img/what.jpg" class="responsive-img">
+                                    <span class="red center card-title">HTML</span>
+                                    <span class="gitLinkU red card-title"><a target="_blank" class="white-text" href="https://github.com/ShelestS/LaravelPHP">GitHub link</a></span>
+                                </div>
+                                <div class="card-content">
+                                    <p class="pe2 black-text">HTML JS Project</p>
+                                </div>
+                                <div class="card-action red">
+                                    <a class="tryme1 white-text">Click</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,79 +197,79 @@
         var pe1 = document.querySelector(".pe1");
         var pagez = document.querySelectorAll(".page");
         var pages = document.querySelector(".pages");
-        var tryclicked=false;
+        var tryclicked = false;
         tryme.onclick = function() {
-            if(tryclicked==false){
-            pe.innerHTML = "В ходе изучения Unity я изучил множество функций и интересных решений для создания игр. Данную игру я делал в течении трёх дней по ~3 часа";
-            //cardcontent.style.height="200px";
-            video.style.display = "block";
-            tryclicked=true;
-            tryme.innerHTML="CLOSE";
-        }else{
-            pe.innerHTML = "Unity Project";
-            video.style.display = "none";
-             tryclicked=false;
-             tryme.innerHTML="CLICK";
+            if (tryclicked == false) {
+                pe.innerHTML = "В ходе изучения Unity я изучил множество функций и интересных решений для создания игр. Данную игру я делал в течении трёх дней по ~3 часа";
+                //cardcontent.style.height="200px";
+                video.style.display = "block";
+                tryclicked = true;
+                tryme.innerHTML = "CLOSE";
+            } else {
+                pe.innerHTML = "Unity Project";
+                video.style.display = "none";
+                tryclicked = false;
+                tryme.innerHTML = "CLICK";
+            }
         }
-        }
-       
-        var clicked=false;
-            tryme1.onclick = function() {
-            if(clicked==false){
-            pages.style.display = "block";
-                 clicked=true;
-                tryme1.innerHTML="CLOSE";
-            }else{
-            pages.style.display = "none";
-                 clicked=false;
-                tryme1.innerHTML="CLICK";
-             
-             for (var i = 0; i < 5; i++) {
+
+        var clicked = false;
+        tryme1.onclick = function() {
+            if (clicked == false) {
+                pages.style.display = "block";
+                clicked = true;
+                tryme1.innerHTML = "CLOSE";
+            } else {
+                pages.style.display = "none";
+                clicked = false;
+                tryme1.innerHTML = "CLICK";
+
+                for (var i = 0; i < 5; i++) {
                     newimg[i].style.display = "none";
-                    pe1.innerHTML="PHP Laravel Project";
+                    pe1.innerHTML = "PHP Laravel Project";
                 }
             }
         }
         var wat = 0;
-        pagez[0].onclick=function(){
-            pe1.innerHTML="Базовый интерфейс главного меню";
-            newimg[0].style.display="block";
-            newimg[1].style.display="none";
-            newimg[2].style.display="none";
-            newimg[3].style.display="none";
-            newimg[4].style.display="none";
+        pagez[0].onclick = function() {
+            pe1.innerHTML = "Базовый интерфейс главного меню";
+            newimg[0].style.display = "block";
+            newimg[1].style.display = "none";
+            newimg[2].style.display = "none";
+            newimg[3].style.display = "none";
+            newimg[4].style.display = "none";
         }
-        pagez[1].onclick=function(){
-            pe1.innerHTML="Выдвигающаяся панель с вкладками и кнопкой 'Добавить' ";
-            newimg[1].style.display="block";
-            newimg[0].style.display="none";
-            newimg[2].style.display="none";
-            newimg[3].style.display="none";
-            newimg[4].style.display="none";
+        pagez[1].onclick = function() {
+            pe1.innerHTML = "Выдвигающаяся панель с вкладками и кнопкой 'Добавить' ";
+            newimg[1].style.display = "block";
+            newimg[0].style.display = "none";
+            newimg[2].style.display = "none";
+            newimg[3].style.display = "none";
+            newimg[4].style.display = "none";
         }
-        pagez[2].onclick=function(){
-            pe1.innerHTML="Страница с потерянными вещами";
-            newimg[2].style.display="block";
-            newimg[1].style.display="none";
-            newimg[0].style.display="none";
-            newimg[3].style.display="none";
-            newimg[4].style.display="none";
+        pagez[2].onclick = function() {
+            pe1.innerHTML = "Страница с потерянными вещами";
+            newimg[2].style.display = "block";
+            newimg[1].style.display = "none";
+            newimg[0].style.display = "none";
+            newimg[3].style.display = "none";
+            newimg[4].style.display = "none";
         }
-        pagez[3].onclick=function(){
-            pe1.innerHTML="Страница с найденными вещами";
-            newimg[3].style.display="block";
-            newimg[1].style.display="none";
-            newimg[2].style.display="none";
-            newimg[0].style.display="none";
-            newimg[4].style.display="none";
+        pagez[3].onclick = function() {
+            pe1.innerHTML = "Страница с найденными вещами";
+            newimg[3].style.display = "block";
+            newimg[1].style.display = "none";
+            newimg[2].style.display = "none";
+            newimg[0].style.display = "none";
+            newimg[4].style.display = "none";
         }
-        pagez[4].onclick=function(){
-            pe1.innerHTML="Поиск среди всех вещей";
-            newimg[4].style.display="block";
-            newimg[1].style.display="none";
-            newimg[2].style.display="none";
-            newimg[3].style.display="none";
-            newimg[0].style.display="none";
+        pagez[4].onclick = function() {
+            pe1.innerHTML = "Поиск среди всех вещей";
+            newimg[4].style.display = "block";
+            newimg[1].style.display = "none";
+            newimg[2].style.display = "none";
+            newimg[3].style.display = "none";
+            newimg[0].style.display = "none";
         }
 
         /*for (var i = 0; i < 5; i++) {
@@ -266,6 +285,7 @@
             }
             // clicked2=false;
         }*/
+
     </script>
 </body>
 
