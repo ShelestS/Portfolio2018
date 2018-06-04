@@ -99,13 +99,25 @@
                                 <div class="card-image">
                                     <img src="img/code3.png" class="responsive-img">
                                     <span class="orange accent-3 center card-title">HTML</span>
-                                    <span class="gitLinkU orange accent-3 card-title"><a target="_blank" class="white-text" href="https://github.com/ShelestS/LaravelPHP">GitHub link</a></span>
+                                    <span class="gitLinkU orange accent-3 card-title"><a target="_blank" class="white-text" href="https://github.com/ShelestS/HTMLBOJ">GitHub link</a></span>
                                 </div>
                                 <div class="card-content">
-                                    <p class="pe2 black-text red-text">HTML JS Project</p>
+                                    <p class="pe2 red-text text-darken-4">HTML JS Project</p>
                                 </div>
+                                <ul class="pages1 pagination">
+                            <li class="page1 orange waves-effect"><a href="#!">1</a></li>
+                            <li class="page1 orange waves-effect"><a href="#!">2</a></li>
+                            <li class="page1 orange waves-effect"><a href="#!">3</a></li>
+                            <li class="page1 orange waves-effect"><a href="#!">4</a></li>
+                            <li class="page1 orange waves-effect"><a href="#!">5</a></li>
+                        </ul>
+                        <img src="img/1.png" class="newimg1 responsive-img" id="0">
+                        <img src="img/2.png" class="newimg1 responsive-img" id="1">
+                        <img src="img/3.png" class="newimg1 responsive-img" id="2">
+                        <img src="img/4.png" class="newimg1 responsive-img" id="3">
+                        <img src="img/5.png" class="newimg1 responsive-img" id="4">
                                 <div class="card-action orange accent-3">
-                                    <a class="tryme1 white-text">Click</a>
+                                    <a class="tryme2 white-text">Click</a>
                                 </div>
                             </div>
                         </div>
@@ -191,13 +203,19 @@
         var pe = document.querySelector(".pe");
         var tryme = document.querySelector(".tryme");
         var tryme1 = document.querySelector(".tryme1");
+        var tryme2 = document.querySelector(".tryme2");
         var cardcontent = document.querySelector(".cardcontent");
         var video = document.querySelector(".video");
         var newimg = document.querySelectorAll(".newimg");
+        var newimg1 = document.querySelectorAll(".newimg1");
         var pe1 = document.querySelector(".pe1");
+        var pe2 = document.querySelector(".pe2");
         var pagez = document.querySelectorAll(".page");
         var pages = document.querySelector(".pages");
+        var pagez1 = document.querySelectorAll(".page1");
+        var pages1 = document.querySelector(".pages1");
         var tryclicked = false;
+
         tryme.onclick = function() {
             if (tryclicked == false) {
                 pe.innerHTML = "В ходе изучения Unity я изучил множество функций и интересных решений для создания игр. Данную игру я делал в течении трёх дней по ~3 часа";
@@ -270,6 +288,69 @@
             newimg[2].style.display = "none";
             newimg[3].style.display = "none";
             newimg[0].style.display = "none";
+        }
+
+        
+
+
+        var clicked1 = false;
+        tryme2.onclick = function() {
+            if (clicked1 == false) {
+                pages1.style.display = "block";
+                clicked1 = true;
+                tryme2.innerHTML = "CLOSE";
+                pe2.innerHTML = "Эту игру я делал в течении ~двух недель. Она полностью написана на чистом HTML + JS без библиотек. В ссылку вставил код последнего на данный момент уровня";
+            } else {
+                pages1.style.display = "none";
+                clicked1 = false;
+                tryme2.innerHTML = "CLICK";
+
+                for (var i = 0; i < 5; i++) {
+                    newimg1[i].style.display = "none";
+                    pe2.innerHTML = "HTML Project";
+                }
+            }
+        }
+        var wat = 0;
+        pagez1[0].onclick = function() {
+            pe2.innerHTML = "Первая локация";
+            newimg1[0].style.display = "block";
+            newimg1[1].style.display = "none";
+            newimg1[2].style.display = "none";
+            newimg1[3].style.display = "none";
+            newimg1[4].style.display = "none";
+        }
+        pagez1[1].onclick = function() {
+            pe2.innerHTML = "Первая битва";
+            newimg1[1].style.display = "block";
+            newimg1[0].style.display = "none";
+            newimg1[2].style.display = "none";
+            newimg1[3].style.display = "none";
+            newimg1[4].style.display = "none";
+        }
+        pagez1[2].onclick = function() {
+            pe2.innerHTML = "Вторая локация";
+            newimg1[2].style.display = "block";
+            newimg1[1].style.display = "none";
+            newimg1[0].style.display = "none";
+            newimg1[3].style.display = "none";
+            newimg1[4].style.display = "none";
+        }
+        pagez1[3].onclick = function() {
+            pe2.innerHTML = "Повествование сюжета в виде рассказа истории и показа слайдов";
+            newimg1[3].style.display = "block";
+            newimg1[1].style.display = "none";
+            newimg1[2].style.display = "none";
+            newimg1[0].style.display = "none";
+            newimg1[4].style.display = "none";
+        }
+        pagez1[4].onclick = function() {
+            pe2.innerHTML = "Боевая система";
+            newimg1[4].style.display = "block";
+            newimg1[1].style.display = "none";
+            newimg1[2].style.display = "none";
+            newimg1[3].style.display = "none";
+            newimg1[0].style.display = "none";
         }
 
         /*for (var i = 0; i < 5; i++) {
