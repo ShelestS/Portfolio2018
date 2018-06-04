@@ -67,7 +67,14 @@ height:500px;
     display:none;
     width:100%;
 }
+.newimg1{
+    display:none;
+    width:100%;
+}
 .pages{
+    display:none;
+}
+.pages1{
     display:none;
 }
 @media screen and (max-width: 600px) {
