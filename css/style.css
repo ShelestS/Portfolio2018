@@ -105,15 +105,3 @@ height:500px;
     color:#affc88 !important;
     font-size:120%
 }
-*::selection {
-  background: #cc0000;
-  color: #ffffff;
-}
-*::-moz-selection {
-  background: #cc0000;
-  color: #ffffff;
-}
-*::-webkit-selection {
-  background: #cc0000;
-  color: #ffffff;
-}
